@@ -1,0 +1,26 @@
+# 与 FNSPID 等数据集 yaml 联用时，以下开关覆盖数据集默认值，保证单模态 DataLoader 仅为 (x, y)
+
+
+
+requires_news_embedding: false
+use_news_embedding: false 
+
+
+
+depth: 10 
+num_envs: 10
+
+
+meta_drop: 0.1
+
+e_layers: 1
+d_layers: 1
+factor: 3
+enc_in: 1
+dec_in: 1
+c_out: 1
+embedd: timeF
+use_multimodal: False
+inverse: False
+text_emb_dim: 4096
+hyper_parameters: []

@@ -1,0 +1,31 @@
+dataset_root: "dataset/FNSPID"
+dataset_version: "ver_primitive"
+
+# 划分仅由此 yaml 指定（Configurator 不从 registry 覆盖）
+train_file: "ver_primitive/train.json"
+vali_file: "ver_primitive/vali.json"
+test_file: "ver_primitive/test.json"
+
+# 可选：覆盖双路嵌入的数据集别名
+# fnspid_news_embed_alias_original: "FNSPID/ver_camf"
+# fnspid_news_embed_alias_ver_primitive: "FNSPID/ver_primitive"
+
+# 数据预处理/模态控制（单模态请用 -m UniModal_Baseline：模型 yaml 会关闭 use_multimodal / use_news_embedding，仅 (x,y)）
+use_primitive: false
+use_multimodal: false
+use_news_embedding: false
+
+learning_rate: 0.001
+embedding_size: 256
+dropout: 0.3
+dropout2: 0.3
+dropout3: 0.1
+
+# time series parameters
+seq_len: 5
+pred_len: 5
+label_len: 0
+batch_size: 32
+patch_len: 5
+stride: 1
+epochs: 25

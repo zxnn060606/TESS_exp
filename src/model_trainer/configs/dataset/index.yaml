@@ -1,0 +1,31 @@
+aliases:
+  FNSPID/ver_camf:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_camf/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_camf/test.json
+      train: ver_camf/train.json
+      vali: ver_camf/vali.json
+    version: ver_camf
+  FNSPID/ver_primitive:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_primitive/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_primitive/test.json
+      train: ver_primitive/train.json
+      vali: ver_primitive/vali.json
+    version: ver_primitive

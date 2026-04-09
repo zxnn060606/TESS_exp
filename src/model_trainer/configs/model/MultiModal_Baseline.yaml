@@ -1,0 +1,20 @@
+
+requires_news_embedding: true
+
+depth: 10 
+num_envs: 10
+
+meta_drop: 0.1
+
+
+e_layers: 1
+d_layers: 1
+factor: 3
+enc_in: 1
+dec_in: 1
+c_out: 1
+embedd: timeF
+use_multimodal: True
+inverse: False
+text_emb_dim: 4096
+hyper_parameters: [seed]
