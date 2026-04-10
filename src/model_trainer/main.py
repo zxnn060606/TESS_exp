@@ -30,5 +30,4 @@ if __name__ == '__main__':
 
     mp.set_start_method('spawn')  # 必须在主程序中设置
     
-    # multiprocessing.set_start_method('spawn')
     quick_start(dataset=args.dataset, config_dict=config_dict, save_model=True)

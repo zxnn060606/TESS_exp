@@ -142,7 +142,7 @@ class FnspidDataset(Dataset):
 
         self.news_embeddings_original: Optional[torch.Tensor] = None
         self.news_embeddings_ver_primitive: Optional[torch.Tensor] = None
-        # use_multimodal：是否启用文本/新闻模态；与「单路/双路嵌入」无关，双路仅由多模态+use_news_embedding 触发
+
         self._fnspid_dual_news = bool(self.use_multimodal and self.use_news_embedding)
 
         if self.use_news_embedding and not self.use_multimodal:

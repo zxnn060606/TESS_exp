@@ -100,8 +100,7 @@ class Trainer:
             if news_feat is None:
                 raise ValueError(
                     "多模态训练需要新闻 embedding："
-                    "FNSPID 双嵌入需 batch 含 news_embed_original 与 news_embed_ver_primitive（按 use_primitive 选型）；"
-                    "单路需含 news_embed。"
+                    "FNSPID 嵌入需 batch 含 news_embed_original 与 news_embed_ver_primitive；"
                 )
             if 'flag' in self.model.forward.__code__.co_varnames:
                 outputs = self.model(batch_x, news_feat, flag=mode)

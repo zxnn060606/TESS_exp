@@ -13,7 +13,7 @@ from pathlib import Path
 
 REPO_ID = "zxnn060606/TESS"
 
-LOCAL_DIR = Path(__file__).resolve().parent.parent / "dataset" / "TESS"
+LOCAL_DIR = Path(__file__).resolve().parent.parent / "dataset" 
 
 REVISION = None
 

@@ -132,8 +132,6 @@ class MultiModal_Baseline(nn.Module):
 
         loss_cons = F.mse_loss(outputs, batch_y)
  
-
-        
         return loss_cons
     
 
