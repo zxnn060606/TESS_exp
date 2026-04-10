@@ -12,7 +12,7 @@ python -m pip install -r requirements_mmtsf.txt
 
 ## HuggingFace 下载
 
-**数据集快照**（脚本内固定 Hub 数据集，保存到 `dataset/TESS/`）：
+**数据集快照**（脚本内固定 Hub 数据集，保存到 `dataset/`）：
 
 ```bash
 python scripts/download_dataset_embeddings.py
